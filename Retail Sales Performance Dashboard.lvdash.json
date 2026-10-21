@@ -1,0 +1,1720 @@
+{
+  "datasets": [
+    {
+      "name": "retail_metrics",
+      "displayName": "Retail Metrics",
+      "asset_name": "retail_q.retail_semantic.retail_metrics"
+    }
+  ],
+  "pages": [
+    {
+      "name": "8e908eb3",
+      "displayName": "Executive Overview",
+      "layout": [
+        {
+          "widget": {
+            "name": "kpi_revenue",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Total Revenue"
+              },
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "measure(Total Revenue)",
+                  "rowNumber": 0
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 2,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi_quantity",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Quantity Sold)",
+                      "expression": "MEASURE(`Total Quantity Sold`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Total Quantity Sold"
+              },
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "measure(Total Quantity Sold)",
+                  "rowNumber": 0
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 2,
+            "y": 0,
+            "width": 2,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi_txn_count",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Transaction Count)",
+                      "expression": "MEASURE(`Transaction Count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Transaction Count"
+              },
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "measure(Transaction Count)",
+                  "rowNumber": 0
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 0,
+            "width": 2,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi_unique_cust",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Unique Customers)",
+                      "expression": "MEASURE(`Unique Customers`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Unique Customers"
+              },
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "measure(Unique Customers)",
+                  "rowNumber": 0
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 0,
+            "width": 2,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi_discount",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Discount)",
+                      "expression": "MEASURE(`Total Discount`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Total Discount"
+              },
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "measure(Total Discount)",
+                  "rowNumber": 0
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 0,
+            "width": 2,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "kpi_deal_size",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Avg Deal Size)",
+                      "expression": "MEASURE(`Avg Deal Size`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Avg Deal Size"
+              },
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "measure(Avg Deal Size)",
+                  "rowNumber": 0
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 10,
+            "y": 0,
+            "width": 2,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "revenue_trend",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "monthly(Transaction Month)",
+                      "expression": "DATE_TRUNC(\"MONTH\", `Transaction Month`)"
+                    },
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    },
+                    {
+                      "name": "measure(Total Quantity Sold)",
+                      "expression": "MEASURE(`Total Quantity Sold`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Revenue Trend Over Time"
+              },
+              "version": 3,
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "monthly(Transaction Month)",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "primary": {
+                    "fields": [
+                      {
+                        "fieldName": "measure(Total Revenue)"
+                      }
+                    ],
+                    "scale": {
+                      "type": "quantitative"
+                    }
+                  },
+                  "secondary": {
+                    "fields": [
+                      {
+                        "fieldName": "measure(Total Quantity Sold)"
+                      }
+                    ],
+                    "scale": {
+                      "type": "quantitative"
+                    }
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 2,
+            "width": 12,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "revenue_by_category",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    },
+                    {
+                      "name": "Product Category",
+                      "expression": "`Product Category`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Revenue by Product Category"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Total Revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Product Category",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 6,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "revenue_by_channel_pie",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    },
+                    {
+                      "name": "Sales Channel",
+                      "expression": "`Sales Channel`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Revenue by Sales Channel"
+              },
+              "version": 3,
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "measure(Total Revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "Sales Channel",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 6,
+            "width": 6,
+            "height": 4
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "product_channel",
+      "displayName": "Product & Channel Analysis",
+      "layout": [
+        {
+          "widget": {
+            "name": "revenue_by_channel",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "Sales Channel",
+                      "expression": "`Sales Channel`"
+                    },
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Revenue by Sales Channel"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Sales Channel",
+                  "displayName": "Sales Channel",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(Total Revenue)",
+                  "displayName": "Total Revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "Sales Channel",
+                  "displayName": "Sales Channel",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 4,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "txn_by_payment",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "Payment Mode",
+                      "expression": "`Payment Mode`"
+                    },
+                    {
+                      "name": "measure(Transaction Count)",
+                      "expression": "MEASURE(`Transaction Count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Transaction Count by Payment Mode"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Payment Mode",
+                  "displayName": "Payment Mode",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(Transaction Count)",
+                  "displayName": "Transaction Count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "Payment Mode",
+                  "displayName": "Payment Mode",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 4,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "revenue_by_category_h",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    },
+                    {
+                      "name": "Product Category",
+                      "expression": "`Product Category`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Revenue by Product Category"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Total Revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Product Category",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "quantity_by_category_h",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Quantity Sold)",
+                      "expression": "MEASURE(`Total Quantity Sold`)"
+                    },
+                    {
+                      "name": "Product Category",
+                      "expression": "`Product Category`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Quantity Sold by Product Category"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Total Quantity Sold)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Product Category",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 0,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "deal_size_by_category_h",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Avg Deal Size)",
+                      "expression": "MEASURE(`Avg Deal Size`)"
+                    },
+                    {
+                      "name": "Product Category",
+                      "expression": "`Product Category`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Avg Deal Size by Product Category"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Avg Deal Size)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Product Category",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "revenue_cat_channel_stack",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "Sales Channel",
+                      "expression": "`Sales Channel`"
+                    },
+                    {
+                      "name": "Product Category",
+                      "expression": "`Product Category`"
+                    },
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Revenue by Category & Channel"
+              },
+              "version": 3,
+              "mark": {
+                "layout": "stack"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Product Category",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(Total Revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "Sales Channel",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 8,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "discount_by_category_h",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Discount)",
+                      "expression": "MEASURE(`Total Discount`)"
+                    },
+                    {
+                      "name": "Product Category",
+                      "expression": "`Product Category`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Total Discount by Product Category"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Total Discount)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Product Category",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 12,
+            "width": 12,
+            "height": 4
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "customer_analysis",
+      "displayName": "Customer Analysis",
+      "layout": [
+        {
+          "widget": {
+            "name": "revenue_by_cust_type",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "Customer Type",
+                      "expression": "`Customer Type`"
+                    },
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Revenue by Customer Type"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Customer Type",
+                  "displayName": "Customer Type",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(Total Revenue)",
+                  "displayName": "Total Revenue",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "Customer Type",
+                  "displayName": "Customer Type",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 0,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "deal_size_by_cust_type",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "Customer Type",
+                      "expression": "`Customer Type`"
+                    },
+                    {
+                      "name": "measure(Avg Deal Size)",
+                      "expression": "MEASURE(`Avg Deal Size`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Avg Deal Size by Customer Type"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "Customer Type",
+                  "displayName": "Customer Type",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "measure(Avg Deal Size)",
+                  "displayName": "Avg Deal Size",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "Customer Type",
+                  "displayName": "Customer Type",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "revenue_by_industry_h",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    },
+                    {
+                      "name": "Customer Industry",
+                      "expression": "`Customer Industry`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Revenue by Customer Industry"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Total Revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Customer Industry",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "unique_cust_by_industry",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Unique Customers)",
+                      "expression": "MEASURE(`Unique Customers`)"
+                    },
+                    {
+                      "name": "Customer Industry",
+                      "expression": "`Customer Industry`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Unique Customers by Customer Industry"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Unique Customers)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Customer Industry",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 4,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "txn_count_by_industry",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Transaction Count)",
+                      "expression": "MEASURE(`Transaction Count`)"
+                    },
+                    {
+                      "name": "Customer Industry",
+                      "expression": "`Customer Industry`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Transaction Count by Customer Industry"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Transaction Count)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Customer Industry",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 8,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "top10_cust_revenue",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    },
+                    {
+                      "name": "Customer Name",
+                      "expression": "`Customer Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Top 10 Customers by Revenue"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Total Revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Customer Name",
+                  "scale": {
+                    "categorySize": {
+                      "type": "number-of-categories",
+                      "number": 10
+                    },
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 4,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "top10_cust_txn",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Transaction Count)",
+                      "expression": "MEASURE(`Transaction Count`)"
+                    },
+                    {
+                      "name": "Customer Name",
+                      "expression": "`Customer Name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Top 10 Customers by Transaction Count"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Transaction Count)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Customer Name",
+                  "scale": {
+                    "categorySize": {
+                      "type": "number-of-categories",
+                      "number": 10
+                    },
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 12,
+            "width": 12,
+            "height": 4
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "geographic_analysis",
+      "displayName": "Geographic Analysis",
+      "layout": [
+        {
+          "widget": {
+            "name": "revenue_by_country",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    },
+                    {
+                      "name": "Billing Country",
+                      "expression": "`Billing Country`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Revenue by Billing Country"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Total Revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Billing Country",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "unique_cust_by_country",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Unique Customers)",
+                      "expression": "MEASURE(`Unique Customers`)"
+                    },
+                    {
+                      "name": "Billing Country",
+                      "expression": "`Billing Country`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Unique Customers by Billing Country"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Unique Customers)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Billing Country",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 4,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "quantity_by_country",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Quantity Sold)",
+                      "expression": "MEASURE(`Total Quantity Sold`)"
+                    },
+                    {
+                      "name": "Billing Country",
+                      "expression": "`Billing Country`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Total Quantity Sold by Billing Country"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Total Quantity Sold)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Billing Country",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 8,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "revenue_by_state_top15",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    },
+                    {
+                      "name": "Billing State",
+                      "expression": "`Billing State`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Revenue by Billing State (Top 15)"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Total Revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Billing State",
+                  "scale": {
+                    "categorySize": {
+                      "type": "number-of-categories",
+                      "number": 15
+                    },
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 0,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "revenue_by_city_top15",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Total Revenue)",
+                      "expression": "MEASURE(`Total Revenue`)"
+                    },
+                    {
+                      "name": "Billing City",
+                      "expression": "`Billing City`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Revenue by Billing City (Top 15)"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Total Revenue)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Billing City",
+                  "scale": {
+                    "categorySize": {
+                      "type": "number-of-categories",
+                      "number": 15
+                    },
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 4,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "txn_count_by_state_top15",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Transaction Count)",
+                      "expression": "MEASURE(`Transaction Count`)"
+                    },
+                    {
+                      "name": "Billing State",
+                      "expression": "`Billing State`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Transaction Count by Billing State (Top 15)"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Transaction Count)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Billing State",
+                  "scale": {
+                    "categorySize": {
+                      "type": "number-of-categories",
+                      "number": 15
+                    },
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 6,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "deal_size_by_state_top15",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "retail_metrics",
+                  "fields": [
+                    {
+                      "name": "measure(Avg Deal Size)",
+                      "expression": "MEASURE(`Avg Deal Size`)"
+                    },
+                    {
+                      "name": "Billing State",
+                      "expression": "`Billing State`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": "Avg Deal Size by Billing State (Top 15)"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "measure(Avg Deal Size)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "Billing State",
+                  "scale": {
+                    "categorySize": {
+                      "type": "number-of-categories",
+                      "number": 15
+                    },
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 12,
+            "width": 12,
+            "height": 4
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
